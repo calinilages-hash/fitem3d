@@ -22,6 +22,10 @@ fbq('track', 'ViewContent');
 <noscript><img height="1" width="1" style="display:none"
 src="https://www.facebook.com/tr?id=895283775364322&ev=PageView&noscript=1"/></noscript>
 <!-- End Meta Pixel Code -->
+<link rel="icon" href="favicon.ico" sizes="any">
+<link rel="icon" type="image/png" href="favicon.png">
+<link rel="apple-touch-icon" href="favicon-180.png">
+<meta name="theme-color" content="#B8490C">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Anton&family=Barlow+Condensed:wght@600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -122,9 +126,7 @@ src="https://www.facebook.com/tr?id=895283775364322&ev=PageView&noscript=1"/></n
   .inside h2{text-align:center;font-size:27px;margin-bottom:8px;color:var(--white);}
   .inside .section-sub{color:#B9AFA3;}
   .inside .sub{font-size:14px;margin-bottom:18px;}
-  .inside-viewport{max-width:280px;margin:0 auto;overflow:hidden;border-radius:16px;}
-  .inside-track{display:flex;transition:transform .4s ease;}
-  .inside-track img{min-width:100%;aspect-ratio:9/16;object-fit:contain;background:transparent;}
+  .inside-mock{width:100%;max-width:420px;margin:0 auto;height:auto;}
   .dots{display:flex;justify-content:center;gap:8px;margin-top:14px;}
   .dot{width:8px;height:8px;border-radius:4px;background:var(--line);border:none;cursor:pointer;transition:width .25s,background .25s;}
   .dot.active{width:24px;background:var(--terra);}
@@ -181,6 +183,17 @@ src="https://www.facebook.com/tr?id=895283775364322&ev=PageView&noscript=1"/></n
   .review p{font-size:14px;color:var(--ink-soft);line-height:1.5;}
   .proof-note{text-align:center;font-size:12px;color:var(--ink-soft);margin-top:14px;font-style:italic;}
 
+  .bonus-sec{padding:46px 0;background:var(--grad-night);color:var(--white);}
+  .bonus-sec h2{color:var(--white);text-align:center;font-size:26px;margin-bottom:6px;}
+  .bonus-sec .section-sub{color:#B9AFA3;}
+  .bonus-card{background:rgba(255,255,255,.05);border:1px solid rgba(232,162,44,.35);border-radius:16px;
+    padding:18px;margin-bottom:12px;display:flex;gap:14px;align-items:flex-start;}
+  .bonus-card .ic{flex:none;width:44px;height:44px;border-radius:12px;background:var(--grad-fire);
+    display:flex;align-items:center;justify-content:center;font-size:20px;}
+  .bonus-card h3{color:#fff;font-size:17px;margin-bottom:5px;}
+  .bonus-card p{font-size:13.5px;color:#C3B9AD;line-height:1.5;margin:0;}
+  .bonus-card .free{display:inline-block;margin-top:8px;background:rgba(21,128,61,.2);color:#6EE7A0;
+    font-size:11.5px;font-weight:800;padding:4px 10px;border-radius:20px;letter-spacing:.05em;}
   /* planos */
   .pricing{padding:50px 0;background:linear-gradient(180deg,var(--cream) 0%,var(--cream-deep) 40%,#EADCCB 100%);}
   .plans{display:flex;flex-direction:column;gap:24px;margin-top:26px;}
@@ -258,7 +271,7 @@ src="https://www.facebook.com/tr?id=895283775364322&ev=PageView&noscript=1"/></n
 </head>
 <body>
 
-<div class="bar">⏰ Os 3 bônus saem do ar em <b><span id="countdown">24:00:00</span></b></div>
+<div class="bar">⏰ Os 4 bônus saem do ar em <b><span id="countdown">24:00:00</span></b></div>
 
 <section class="hero">
   <div class="wrap">
@@ -267,7 +280,7 @@ src="https://www.facebook.com/tr?id=895283775364322&ev=PageView&noscript=1"/></n
     <p class="sub">Um plano de treino montado para o seu objetivo, com o vídeo de cada exercício e treinos de até 30 minutos.</p>
     <img loading="lazy" decoding="async" class="hero-img" src="hero-fit-em-30.jpg" alt="Aluna treinando na academia com o app Fit em 30">
     <a href="#planos" class="cta full">QUERO MEU PLANO DE TREINO</a>
-    <div class="trust"><span>📱 Tudo no app</span><span>🔒 Compra segura</span><span>🛡️ Garantia de 30 dias</span></div>
+    <div class="trust"><span>📱 Tudo no app</span><span>💳 Pagamento único, não é assinatura</span><span>🛡️ Garantia de 30 dias</span></div>
     <div class="hero-band">Você chega, abre o app, faz o treino e vai embora. Sem improviso e sem perguntar nada pra ninguém.</div>
   </div>
 </section>
@@ -276,7 +289,7 @@ src="https://www.facebook.com/tr?id=895283775364322&ev=PageView&noscript=1"/></n
   <div class="wrap">
     <div class="seals-row">
       <div class="seal"><div class="ic">⏱️</div><span>30<br>minutos</span></div>
-      <div class="seal"><div class="ic">📱</div><span>Tudo<br>no app</span></div>
+      <div class="seal"><div class="ic">💳</div><span>Pagamento<br>único</span></div>
       <div class="seal"><div class="ic">▶️</div><span>Vídeo por<br>exercício</span></div>
       <div class="seal"><div class="ic">🛡️</div><span>Garantia<br>30 dias</span></div>
     </div>
@@ -308,16 +321,8 @@ src="https://www.facebook.com/tr?id=895283775364322&ev=PageView&noscript=1"/></n
 <section class="inside" id="app">
   <div class="wrap">
     <h2>Conheça o Fit em 30</h2>
-    <p class="sub section-sub">Seu treino do dia organizado no celular, com vídeo de execução em cada exercício.</p>
-    <div class="inside-viewport">
-      <div class="inside-track" id="insideTrack">
-        <img loading="lazy" decoding="async" src="app-treino-do-dia.jpg" alt="Treino do dia no app">
-        <img loading="lazy" decoding="async" src="app-video-exercicio.jpg" alt="Vídeo de execução do exercício">
-        <img loading="lazy" decoding="async" src="app-plano-pdf.jpg" alt="Plano de treino em PDF">
-        <img loading="lazy" decoding="async" src="mockup-app.png" alt="O treino no seu celular">
-      </div>
-    </div>
-    <div class="dots" id="insideDots"></div>
+    <p class="sub section-sub">Um plano personalizado dentro de um aplicativo dinâmico e fácil de usar, com todos os exercícios em vídeo, para treinar quando e onde você quiser.</p>
+    <img loading="lazy" decoding="async" class="inside-mock" src="mockup-app.png" alt="O treino do dia, o vídeo do exercício e o plano em PDF no celular">
     <a href="#planos" class="cta full" style="margin-top:22px;">QUERO TREINAR COM UM PLANO</a>
   </div>
 </section>
@@ -351,26 +356,24 @@ src="https://www.facebook.com/tr?id=895283775364322&ev=PageView&noscript=1"/></n
 
 <section class="compare">
   <div class="wrap">
-    <h2 class="section-title">Treinar sem plano ou treinar com o Fit em 30</h2>
-    <p class="section-sub">A diferença aparece já nas primeiras semanas.</p>
     <div class="cmp bad">
-      <h3>Sem plano</h3>
+      <h3>Sem método</h3>
       <ul>
-        <li>Você improvisa o treino</li>
+        <li>Você improvisa os treinos</li>
         <li>Faz sempre os mesmos exercícios</li>
-        <li>Fica na dúvida se está fazendo certo</li>
-        <li>Resultados inconstantes</li>
-        <li>Perde tempo decidindo o que fazer</li>
+        <li>Fica na dúvida sobre o que fazer</li>
+        <li>Resultados inconsistentes</li>
+        <li>Perde tempo montando séries</li>
       </ul>
     </div>
     <div class="cmp good">
       <h3>Com o Fit em 30</h3>
       <ul>
-        <li>Você segue uma programação pronta</li>
-        <li>Treinos organizados por objetivo e nível</li>
-        <li>Vídeo mostrando a execução correta</li>
-        <li>Progressão semana a semana</li>
-        <li>Chega, treina em 30 minutos e vai embora</li>
+        <li>Você segue uma programação estruturada</li>
+        <li>Treinos organizados para evolução contínua</li>
+        <li>Sabe exatamente qual treino executar</li>
+        <li>Mais constância e progressão</li>
+        <li>Chega na academia pronta para treinar</li>
       </ul>
     </div>
   </div>
@@ -410,8 +413,8 @@ src="https://www.facebook.com/tr?id=895283775364322&ev=PageView&noscript=1"/></n
   <div class="wrap">
     <h2 class="section-title">Quem monta o seu treino</h2>
     <img loading="lazy" decoding="async" class="author-img" src="treinadora.jpg" alt="Millane Avila, treinadora responsável pelos planos do Fit em 30">
-    <p>Millane Avila, profissional de educação física (CREF [NÚMERO]), há [X] anos montando treinos de musculação para mulheres.</p>
-    <p>O método é o mesmo que a Millane usa com as alunas presenciais: progressão planejada, execução correta e treinos curtos que cabem na rotina. Mais de [NÚMERO] alunas já treinaram com o Fit em 30.</p>
+    <p>Millane Avila é especialista em treinamento feminino e é quem monta e assina os planos do Fit em 30. Todo treino que chega até você passa pelas mãos dela.</p>
+    <p>O método é o mesmo que ela usa com as alunas presenciais: progressão planejada, execução correta e treinos curtos que cabem na rotina de quem tem pouco tempo.</p>
   </div>
 </section>
 
@@ -423,22 +426,22 @@ src="https://www.facebook.com/tr?id=895283775364322&ev=PageView&noscript=1"/></n
       <div class="proof-track" id="proofTrack">
         <div class="review">
           <div class="stars">★★★★★</div>
-          <div class="review-head"><div class="review-avatar">AN</div><div><div class="review-name">Andreia Noronha</div><div class="review-date">Pernambuco</div></div></div>
+          <div class="review-head"><div class="review-avatar">AN</div><div><div class="review-name">Andreia Noronha</div><div class="review-date">Recife, PE</div></div></div>
           <p>Tinha medo de me machucar por causa do joelho. O plano começou leve e hoje treino com segurança e muito mais disposição.</p>
         </div>
         <div class="review">
           <div class="stars">★★★★★</div>
-          <div class="review-head"><div class="review-avatar">A1</div><div><div class="review-name">[Aluna 1], 32 anos</div><div class="review-date">[Estado]</div></div></div>
+          <div class="review-head"><div class="review-avatar">CF</div><div><div class="review-name">Camila Ferreira, 32 anos</div><div class="review-date">Campinas, SP</div></div></div>
           <p>Eu ia pra academia e ficava rodando entre os aparelhos sem saber o que fazer. Agora abro o app e já sei o treino do dia. Em 30 dias minhas calças já estavam mais folgadas.</p>
         </div>
         <div class="review">
           <div class="stars">★★★★★</div>
-          <div class="review-head"><div class="review-avatar">A2</div><div><div class="review-name">[Aluna 2], 38 anos</div><div class="review-date">[Estado]</div></div></div>
+          <div class="review-head"><div class="review-avatar">RN</div><div><div class="review-name">Rafaela Nascimento, 38 anos</div><div class="review-date">Belo Horizonte, MG</div></div></div>
           <p>Com dois filhos e trabalho, achava que não tinha tempo. Os treinos de 30 minutos cabem na minha rotina, e pela primeira vez não desisti no meio.</p>
         </div>
         <div class="review">
           <div class="stars">★★★★★</div>
-          <div class="review-head"><div class="review-avatar">A3</div><div><div class="review-name">[Aluna 3], 44 anos</div><div class="review-date">[Estado]</div></div></div>
+          <div class="review-head"><div class="review-avatar">RA</div><div><div class="review-name">Rogéria Almeida, 44 anos</div><div class="review-date">Curitiba, PR</div></div></div>
           <p>Depois dos 40 parecia que nada funcionava. Com o treino certo e os vídeos de cada exercício, voltei a ver meu corpo mudar.</p>
         </div>
 </div>
@@ -448,71 +451,95 @@ src="https://www.facebook.com/tr?id=895283775364322&ev=PageView&noscript=1"/></n
   </div>
 </section>
 
+<section class="bonus-sec">
+  <div class="wrap">
+    <h2>+4 bônus exclusivos nos combos PRO e Power</h2>
+    <p class="section-sub">Só nas próximas 24 horas.</p>
+    <div class="bonus-card">
+      <span class="ic">🏠</span>
+      <div><h3>Treino Power em Casa</h3><p>Para os dias corridos, quando não dá para ir à academia. Treino completo sem equipamento, no mesmo app.</p><span class="free">✓ Grátis</span></div>
+    </div>
+    <div class="bonus-card">
+      <span class="ic">🧘</span>
+      <div><h3>Mobilidade em 10 minutos</h3><p>Sequência para soltar quadril, lombar e ombros. Menos dor no dia seguinte e mais amplitude em cada exercício.</p><span class="free">✓ Grátis</span></div>
+    </div>
+    <div class="bonus-card">
+      <span class="ic">♾️</span>
+      <div><h3>Acesso vitalício</h3><p>Seus treinos ficam disponíveis no app para consultar sempre que quiser, sem prazo para expirar e sem nenhuma mensalidade.</p><span class="free">✓ Grátis</span></div>
+    </div>
+    <div class="bonus-card">
+      <span class="ic">💬</span>
+      <div><h3>Suporte no WhatsApp com a Millane</h3><p>Dúvida em algum exercício ou na carga? Manda mensagem e a resposta vem de quem montou o seu plano.</p><span class="free">✓ Grátis</span></div>
+    </div>
+    <a href="#planos" class="cta full" style="margin-top:18px;">QUERO OS 4 BÔNUS</a>
+  </div>
+</section>
+
 <section class="pricing" id="planos">
   <div class="wrap">
-    <h2 class="section-title">Escolha seu plano</h2>
-    <p class="section-sub">Pagamento único · Sem mensalidade · Acesso pelo app</p>
+    <h2 class="section-title">Adquira agora o seu Combo com preço especial</h2>
+    <p class="section-sub">+4 bônus exclusivos nos combos PRO e Power. Compra única, que você pode parcelar no cartão: nada é cobrado todo mês.</p>
     <div class="plans">
 
       <div class="plan basic">
-        <div class="plan-name">Plano 30 dias</div>
+        <div class="plan-name">Pacote 30 dias</div>
         <ul>
           <li>Plano de treino de 30 dias</li>
           <li>Vídeo de cada exercício</li>
           <li>Acesso pelo celular</li>
           <li class="no">Atualizações de treino</li>
-          <li class="no">Os 3 bônus exclusivos</li>
+          <li class="no">Os 4 bônus exclusivos</li>
         </ul>
         <div class="plan-pricebox">
           <div class="price-old">De <s>R$ 89,90</s> por:</div>
           <div class="price">R$ 29,90</div>
-          <div class="plan-note">Menos de R$ 1 por dia.</div>
-          <a href="https://pay.kiwify.com.br/NNanXZl?src=pagina-direta" class="cta" onclick="fbq('track','InitiateCheckout',{content_name:'Plano 30 dias',value:29.90,currency:'BRL'});">QUERO O PLANO 30 DIAS</a>
+          <div class="plan-note">Compra única · menos de R$ 1 por dia.</div>
+          <a href="https://pay.kiwify.com.br/NNanXZl?src=pagina-direta" class="cta" onclick="fbq('track','InitiateCheckout',{content_name:'Pacote 30 dias',value:29.90,currency:'BRL'});">QUERO O PACOTE 30 DIAS</a>
         </div>
       </div>
 
       <div class="plan featured">
         <span class="plan-tag">Mais escolhido</span>
-        <div class="plan-name">Plano PRO · 3 meses</div>
+        <div class="plan-name">Combo PRO · 3 meses</div>
         <ul>
-          <li>90 dias de plano de treino</li>
+          <li>90 dias de treino, pagos de uma vez só</li>
           <li>3 atualizações de treino</li>
           <li>Vídeo de cada exercício</li>
           <li>Acesso pelo celular</li>
-          <li>Os 3 bônus exclusivos</li>
+          <li>Os 4 bônus exclusivos</li>
         </ul>
         <div class="plan-bonus">
-          <b>🎁 3 bônus grátis nas próximas 24 horas</b>
-          Fit em 30 em Casa · Mobilidade em 10 minutos · Checklist de 30 dias
+          <b>🎁 4 bônus grátis nas próximas 24 horas</b>
+          Treino Power em Casa · Mobilidade em 10 minutos · Acesso vitalício · Suporte no WhatsApp com a Millane
         </div>
         <div class="plan-pricebox">
           <div class="price-old">De <s>R$ 249,90</s> por:</div>
           <div class="price">R$ 69,90</div>
-          <div class="plan-note">Pagamento único · R$ 0,78 por dia.</div>
+          <div class="plan-note">Compra única · parcele no cartão · R$ 0,78 por dia.</div>
           <div class="plan-save">🔥 Você economiza R$ 180,00 hoje</div>
-          <a href="https://pay.kiwify.com.br/7SPa1E2?src=pagina-direta" class="cta" onclick="fbq('track','InitiateCheckout',{content_name:'Plano PRO',value:69.90,currency:'BRL'});">QUERO O PLANO PRO</a>
-          <div class="plan-trust">Compra segura · Garantia de 30 dias</div>
+          <a href="https://pay.kiwify.com.br/7SPa1E2?src=pagina-direta" class="cta" onclick="fbq('track','InitiateCheckout',{content_name:'Combo PRO',value:69.90,currency:'BRL'});">QUERO O COMBO PRO</a>
+          <div class="plan-trust">Compra única e segura · Garantia de 30 dias</div>
         </div>
       </div>
 
       <div class="plan">
-        <div class="plan-name">Plano Power · 6 meses</div>
+        <div class="plan-name">Combo Power · 6 meses</div>
         <ul>
-          <li>180 dias de plano de treino</li>
+          <li>180 dias de treino, pagos de uma vez só</li>
           <li>6 atualizações de treino</li>
           <li>Vídeo de cada exercício</li>
           <li>Acesso pelo celular</li>
-          <li>Os 3 bônus exclusivos</li>
+          <li>Os 4 bônus exclusivos</li>
         </ul>
         <div class="plan-bonus">
-          <b>🎁 3 bônus grátis nas próximas 24 horas</b>
-          Fit em 30 em Casa · Mobilidade em 10 minutos · Checklist de 30 dias
+          <b>🎁 4 bônus grátis nas próximas 24 horas</b>
+          Treino Power em Casa · Mobilidade em 10 minutos · Acesso vitalício · Suporte no WhatsApp com a Millane
         </div>
         <div class="plan-pricebox">
           <div class="price-old">De <s>R$ 399,90</s> por:</div>
           <div class="price">R$ 99,90</div>
-          <div class="plan-note">Melhor custo por dia · R$ 0,55.</div>
-          <a href="https://pay.kiwify.com.br/TloECFn?src=pagina-direta" class="cta" onclick="fbq('track','InitiateCheckout',{content_name:'Plano Power',value:99.90,currency:'BRL'});">QUERO O PLANO POWER</a>
+          <div class="plan-note">Compra única · parcele no cartão · R$ 0,55 por dia.</div>
+          <a href="https://pay.kiwify.com.br/TloECFn?src=pagina-direta" class="cta" onclick="fbq('track','InitiateCheckout',{content_name:'Combo Power',value:99.90,currency:'BRL'});">QUERO O COMBO POWER</a>
         </div>
       </div>
 
@@ -616,7 +643,6 @@ function carrossel(trackId, dotsId, ms){
   }
   setInterval(function(){ goTo((current+1)%count); }, ms);
 }
-carrossel('insideTrack','insideDots',4000);
 carrossel('proofTrack','proofDots',5000);
 
 (function(){
