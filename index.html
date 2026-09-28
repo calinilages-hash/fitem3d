@@ -5,23 +5,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <title>Fit em 30 | Treino de academia personalizado em 30 dias</title>
 <meta name="description" content="Plano de treino de academia montado para o seu objetivo, com vídeo de cada exercício e treinos de até 30 minutos. Acesso pelo app. Garantia de 30 dias.">
-<!-- Meta Pixel Code -->
-<script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '895283775364322');
-fbq('track', 'PageView');
-fbq('track', 'ViewContent');
-</script>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=895283775364322&ev=PageView&noscript=1"/></noscript>
-<!-- End Meta Pixel Code -->
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],j=d.createElement(s);j.async=true;j.src="https://trak.projetofitem30d.online/7jozwufysnc.js?"+i;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','c79mu=CgpOPjI4WiowPzs7KicwXBVTQVdXUxMUXh4BFgwQAxUFBwccC0ZHHk0BHRUPGxI%3D');</script>
+<!-- End Google Tag Manager -->
 <link rel="icon" href="favicon.ico" sizes="any">
 <link rel="icon" type="image/png" href="favicon.png">
 <link rel="apple-touch-icon" href="favicon-180.png">
@@ -280,10 +266,23 @@ src="https://www.facebook.com/tr?id=895283775364322&ev=PageView&noscript=1"/></n
   .up-price .now{font-family:'Anton',sans-serif;font-size:46px;line-height:1;color:var(--terra);}
   .up-price .obs{font-size:12.5px;color:var(--ink-soft);margin-top:6px;}
   .up-box .cta{display:block;width:100%;font-size:16px;}
-  .up-skip{display:inline-block;background:none;border:none;cursor:pointer;font-size:13.5px;color:var(--ink-soft);
+  .up-skip{display:inline-block;text-decoration:none;background:none;border:none;cursor:pointer;font-size:13.5px;color:var(--ink-soft);
     text-decoration:underline;padding:10px 4px 2px;}
   .up-close{position:absolute;top:8px;right:14px;background:none;border:none;font-size:26px;line-height:1;
     color:var(--muted);cursor:pointer;}
+  /* provas com prints */
+  .prints{padding:42px 0 18px;background:var(--cream-deep);}
+  .prints-row{display:flex;gap:14px;overflow-x:auto;scroll-snap-type:x mandatory;padding:4px 18px 14px;
+    -webkit-overflow-scrolling:touch;scrollbar-width:none;}
+  .prints-row::-webkit-scrollbar{display:none;}
+  .print{flex:0 0 72%;max-width:260px;scroll-snap-align:center;background:var(--white);border-radius:18px;
+    padding:6px;box-shadow:0 10px 26px rgba(26,23,20,.14);}
+  .print img{display:block;width:100%;height:auto;border-radius:13px;}
+  .prints-hint{text-align:center;font-size:12.5px;color:var(--ink-soft);margin-top:4px;}
+  .author-stats{display:flex;gap:10px;justify-content:center;margin:18px 0 6px;}
+  .author-stats div{flex:1;max-width:150px;background:var(--cream);border:1px solid var(--line);border-radius:14px;padding:12px 8px;text-align:center;}
+  .author-stats strong{display:block;font-family:'Anton',sans-serif;font-size:26px;color:var(--terra);line-height:1.1;}
+  .author-stats span{font-size:12.5px;color:var(--ink-soft);}
   /* reveal */
   .reveal{opacity:0;transform:translateY(22px);transition:opacity .6s ease,transform .6s ease;}
   .reveal.in{opacity:1;transform:none;}
@@ -414,7 +413,7 @@ src="https://www.facebook.com/tr?id=895283775364322&ev=PageView&noscript=1"/></n
       <div class="benefit"><span class="icon">📱</span>Acesso pelo celular, na academia</div>
       <div class="benefit"><span class="icon">🔁</span>Opções para máquina diferente</div>
     </div>
-    <a href="#depoimentos" class="cta full">VER RESULTADOS DE QUEM JÁ TREINA</a>
+    <a href="#resultados" class="cta full">VER RESULTADOS DE QUEM JÁ TREINA</a>
   </div>
 </section>
 
@@ -430,19 +429,148 @@ src="https://www.facebook.com/tr?id=895283775364322&ev=PageView&noscript=1"/></n
   </div>
 </section>
 
-<section class="author">
+<section class="author" id="autoridade">
   <div class="wrap">
     <h2 class="section-title">Quem monta o seu treino</h2>
     <img loading="lazy" decoding="async" class="author-img" src="treinadora.jpg" alt="Millane Avila, treinadora responsável pelos planos do Fit em 30">
+    <div class="author-stats">
+      <div><strong>12 anos</strong><span>montando treinos para mulheres</span></div>
+      <div><strong>+16.000</strong><span>alunas atendidas</span></div>
+    </div>
     <p>Millane Avila é especialista em treinamento feminino e é quem monta e assina os planos do Fit em 30. Todo treino que chega até você passa pelas mãos dela.</p>
     <p>O método é o mesmo que ela usa com as alunas presenciais: progressão planejada, execução correta e treinos curtos que cabem na rotina de quem tem pouco tempo.</p>
   </div>
 </section>
 
+<section class="prints" id="resultados">
+  <div class="wrap">
+    <h2 class="section-title">Resultados das alunas</h2>
+    <p class="section-sub">Antes e depois de quem seguiu o plano do Fit em 30.</p>
+  </div>
+  <div class="prints-row">
+      <div class="print"><img loading="lazy" decoding="async" src="provas/prova-1.jpg" alt="Antes e depois de aluna do Fit em 30" onerror="this.parentNode.remove()"></div>
+      <div class="print"><img loading="lazy" decoding="async" src="provas/prova-2.jpg" alt="Antes e depois de aluna do Fit em 30" onerror="this.parentNode.remove()"></div>
+      <div class="print"><img loading="lazy" decoding="async" src="provas/prova-3.jpg" alt="Antes e depois de aluna do Fit em 30" onerror="this.parentNode.remove()"></div>
+      <div class="print"><img loading="lazy" decoding="async" src="provas/prova-4.jpg" alt="Antes e depois de aluna do Fit em 30" onerror="this.parentNode.remove()"></div>
+      <div class="print"><img loading="lazy" decoding="async" src="provas/prova-5.jpg" alt="Antes e depois de aluna do Fit em 30" onerror="this.parentNode.remove()"></div>
+      <div class="print"><img loading="lazy" decoding="async" src="provas/prova-6.jpg" alt="Antes e depois de aluna do Fit em 30" onerror="this.parentNode.remove()"></div>
+      <div class="print"><img loading="lazy" decoding="async" src="provas/prova-7.jpg" alt="Antes e depois de aluna do Fit em 30" onerror="this.parentNode.remove()"></div>
+      <div class="print"><img loading="lazy" decoding="async" src="provas/prova-8.jpg" alt="Antes e depois de aluna do Fit em 30" onerror="this.parentNode.remove()"></div>
+  </div>
+  <p class="prints-hint">Arraste para o lado ↔</p>
+  <p class="prints-hint" style="opacity:.75;margin-top:2px;">Resultados individuais. Variam conforme dedicação, alimentação e ponto de partida.</p>
+</section>
+
+
+<section style="padding:10px 0 34px;">
+  <div class="wrap" style="text-align:center;">
+    <p style="font-size:15px;color:var(--ink-soft);margin-bottom:14px;">Comece hoje com o seu plano de treino personalizado.</p>
+    <a href="https://pay.kiwify.com.br/NNanXZl?src=pagina-direta-apos-avaliacoes" id="btn-checkout-basico-avaliacoes" class="cta full js-basic btn-checkout" data-ic-name="Pacote 30 dias" data-ic-value="29.90">QUERO MEU PLANO POR R$ 29,90</a>
+    <p style="font-size:13.5px;margin-top:12px;"><a href="#bonus" style="color:var(--terra);font-weight:700;">ou leve o Combo PRO com os 4 bônus grátis ↓</a></p>
+  </div>
+</section>
+
+<section class="bonus-sec" id="bonus">
+  <div class="wrap">
+    <h2>+4 bônus exclusivos nos combos PRO e Power</h2>
+    <p class="section-sub">Só nas próximas 24 horas.</p>
+    <div class="bonus-card">
+      <span class="ic">🏠</span>
+      <div><h3>Treino Power em Casa</h3><p>Para os dias corridos, quando não dá para ir à academia. Treino completo sem equipamento, no mesmo app.</p><span class="free">✓ Grátis</span></div>
+    </div>
+    <div class="bonus-card">
+      <span class="ic">🧘</span>
+      <div><h3>Mobilidade em 10 minutos</h3><p>Sequência para soltar quadril, lombar e ombros. Menos dor no dia seguinte e mais amplitude em cada exercício.</p><span class="free">✓ Grátis</span></div>
+    </div>
+    <div class="bonus-card">
+      <span class="ic">♾️</span>
+      <div><h3>Acesso vitalício</h3><p>Seus treinos ficam disponíveis no app para consultar sempre que quiser, sem prazo para expirar e sem nenhuma mensalidade.</p><span class="free">✓ Grátis</span></div>
+    </div>
+    <div class="bonus-card">
+      <span class="ic">💬</span>
+      <div><h3>Suporte no WhatsApp com a Millane</h3><p>Dúvida em algum exercício ou na carga? Manda mensagem e a resposta vem de quem montou o seu plano.</p><span class="free">✓ Grátis</span></div>
+    </div>
+    <a href="https://pay.kiwify.com.br/7SPa1E2?src=pagina-direta-bonus" id="btn-checkout-pro-bonus" class="cta full btn-checkout" style="margin-top:18px;" data-ic-name="Combo PRO (bloco bônus)" data-ic-value="69.90">QUERO OS 4 BÔNUS POR R$ 69,90</a>
+  </div>
+</section>
+
+<section class="pricing" id="planos">
+  <div class="wrap">
+    <h2 class="section-title">Adquira agora o seu Combo com preço especial</h2>
+    <p class="section-sub">+4 bônus exclusivos nos combos PRO e Power. Compra única, que você pode parcelar no cartão: nada é cobrado todo mês.</p>
+    <div class="plans">
+
+      <div class="plan basic">
+        <div class="plan-name">Pacote 30 dias</div>
+        <ul>
+          <li>Plano de treino de 30 dias</li>
+          <li>Vídeo de cada exercício</li>
+          <li>Acesso pelo celular</li>
+          <li class="no">Atualizações de treino</li>
+          <li class="no">Os 4 bônus exclusivos</li>
+        </ul>
+        <div class="plan-pricebox">
+          <div class="price-old">De <s>R$ 89,90</s> por:</div>
+          <div class="price">R$ 29,90</div>
+          <div class="plan-note">Compra única · menos de R$ 1 por dia.</div>
+          <a href="https://pay.kiwify.com.br/NNanXZl?src=pagina-direta" id="btn-checkout-basico-planos" class="cta js-basic btn-checkout" data-ic-name="Pacote 30 dias" data-ic-value="29.90">QUERO O PACOTE 30 DIAS</a>
+        </div>
+      </div>
+
+      <div class="plan featured">
+        <span class="plan-tag">Mais escolhido</span>
+        <div class="plan-name">Combo PRO · 3 meses</div>
+        <ul>
+          <li>90 dias de treino, pagos de uma vez só</li>
+          <li>3 atualizações de treino</li>
+          <li>Vídeo de cada exercício</li>
+          <li>Acesso pelo celular</li>
+          <li>Os 4 bônus exclusivos</li>
+        </ul>
+        <div class="plan-bonus">
+          <b>🎁 4 bônus grátis nas próximas 24 horas</b>
+          Treino Power em Casa · Mobilidade em 10 minutos · Acesso vitalício · Suporte no WhatsApp com a Millane
+        </div>
+        <div class="plan-pricebox">
+          <div class="price-old">De <s>R$ 249,90</s> por:</div>
+          <div class="price">R$ 69,90</div>
+          <div class="plan-note">Compra única · parcele no cartão · R$ 0,78 por dia.</div>
+          <div class="plan-save">🔥 Você economiza R$ 180,00 hoje</div>
+          <a href="https://pay.kiwify.com.br/7SPa1E2?src=pagina-direta" id="btn-checkout-pro-planos" class="cta btn-checkout" data-ic-name="Combo PRO" data-ic-value="69.90">QUERO O COMBO PRO</a>
+          <div class="plan-trust">Compra única e segura · Garantia de 30 dias</div>
+        </div>
+      </div>
+
+      <div class="plan">
+        <div class="plan-name">Combo Power · 6 meses</div>
+        <ul>
+          <li>180 dias de treino, pagos de uma vez só</li>
+          <li>6 atualizações de treino</li>
+          <li>Vídeo de cada exercício</li>
+          <li>Acesso pelo celular</li>
+          <li>Os 4 bônus exclusivos</li>
+        </ul>
+        <div class="plan-bonus">
+          <b>🎁 4 bônus grátis nas próximas 24 horas</b>
+          Treino Power em Casa · Mobilidade em 10 minutos · Acesso vitalício · Suporte no WhatsApp com a Millane
+        </div>
+        <div class="plan-pricebox">
+          <div class="price-old">De <s>R$ 399,90</s> por:</div>
+          <div class="price">R$ 99,90</div>
+          <div class="plan-note">Compra única · parcele no cartão · R$ 0,55 por dia.</div>
+          <a href="https://pay.kiwify.com.br/TloECFn?src=pagina-direta" id="btn-checkout-power-planos" class="cta btn-checkout" data-ic-name="Combo Power" data-ic-value="99.90">QUERO O COMBO POWER</a>
+        </div>
+      </div>
+
+    </div>
+    <div class="guarantee-line">✓ <b>GARANTIA DE 30 DIAS</b> · risco zero</div>
+  </div>
+</section>
+
 <section class="proof" id="depoimentos">
   <div class="wrap">
-    <h2 class="section-title">O que as alunas dizem</h2>
-    <p class="section-sub">Resultados de quem seguiu o plano.</p>
+    <h2 class="section-title">Ainda em dúvida?</h2>
+    <p class="section-sub">Veja o que dizem as alunas que já seguem o plano.</p>
     <div class="proof-viewport">
       <div class="proof-track" id="proofTrack">
         <div class="review">
@@ -472,104 +600,7 @@ src="https://www.facebook.com/tr?id=895283775364322&ev=PageView&noscript=1"/></n
   </div>
 </section>
 
-<section class="bonus-sec" id="bonus">
-  <div class="wrap">
-    <h2>+4 bônus exclusivos nos combos PRO e Power</h2>
-    <p class="section-sub">Só nas próximas 24 horas.</p>
-    <div class="bonus-card">
-      <span class="ic">🏠</span>
-      <div><h3>Treino Power em Casa</h3><p>Para os dias corridos, quando não dá para ir à academia. Treino completo sem equipamento, no mesmo app.</p><span class="free">✓ Grátis</span></div>
-    </div>
-    <div class="bonus-card">
-      <span class="ic">🧘</span>
-      <div><h3>Mobilidade em 10 minutos</h3><p>Sequência para soltar quadril, lombar e ombros. Menos dor no dia seguinte e mais amplitude em cada exercício.</p><span class="free">✓ Grátis</span></div>
-    </div>
-    <div class="bonus-card">
-      <span class="ic">♾️</span>
-      <div><h3>Acesso vitalício</h3><p>Seus treinos ficam disponíveis no app para consultar sempre que quiser, sem prazo para expirar e sem nenhuma mensalidade.</p><span class="free">✓ Grátis</span></div>
-    </div>
-    <div class="bonus-card">
-      <span class="ic">💬</span>
-      <div><h3>Suporte no WhatsApp com a Millane</h3><p>Dúvida em algum exercício ou na carga? Manda mensagem e a resposta vem de quem montou o seu plano.</p><span class="free">✓ Grátis</span></div>
-    </div>
-    <a href="https://pay.kiwify.com.br/7SPa1E2?src=pagina-direta-bonus" class="cta full" style="margin-top:18px;" onclick="fbq('track','InitiateCheckout',{content_name:'Combo PRO (bloco bônus)',value:69.90,currency:'BRL'});">QUERO OS 4 BÔNUS POR R$ 69,90</a>
-  </div>
-</section>
-
-<section class="pricing" id="planos">
-  <div class="wrap">
-    <h2 class="section-title">Adquira agora o seu Combo com preço especial</h2>
-    <p class="section-sub">+4 bônus exclusivos nos combos PRO e Power. Compra única, que você pode parcelar no cartão: nada é cobrado todo mês.</p>
-    <div class="plans">
-
-      <div class="plan basic">
-        <div class="plan-name">Pacote 30 dias</div>
-        <ul>
-          <li>Plano de treino de 30 dias</li>
-          <li>Vídeo de cada exercício</li>
-          <li>Acesso pelo celular</li>
-          <li class="no">Atualizações de treino</li>
-          <li class="no">Os 4 bônus exclusivos</li>
-        </ul>
-        <div class="plan-pricebox">
-          <div class="price-old">De <s>R$ 89,90</s> por:</div>
-          <div class="price">R$ 29,90</div>
-          <div class="plan-note">Compra única · menos de R$ 1 por dia.</div>
-          <a href="https://pay.kiwify.com.br/NNanXZl?src=pagina-direta" class="cta js-basic" onclick="fbq('track','InitiateCheckout',{content_name:'Pacote 30 dias',value:29.90,currency:'BRL'});">QUERO O PACOTE 30 DIAS</a>
-        </div>
-      </div>
-
-      <div class="plan featured">
-        <span class="plan-tag">Mais escolhido</span>
-        <div class="plan-name">Combo PRO · 3 meses</div>
-        <ul>
-          <li>90 dias de treino, pagos de uma vez só</li>
-          <li>3 atualizações de treino</li>
-          <li>Vídeo de cada exercício</li>
-          <li>Acesso pelo celular</li>
-          <li>Os 4 bônus exclusivos</li>
-        </ul>
-        <div class="plan-bonus">
-          <b>🎁 4 bônus grátis nas próximas 24 horas</b>
-          Treino Power em Casa · Mobilidade em 10 minutos · Acesso vitalício · Suporte no WhatsApp com a Millane
-        </div>
-        <div class="plan-pricebox">
-          <div class="price-old">De <s>R$ 249,90</s> por:</div>
-          <div class="price">R$ 69,90</div>
-          <div class="plan-note">Compra única · parcele no cartão · R$ 0,78 por dia.</div>
-          <div class="plan-save">🔥 Você economiza R$ 180,00 hoje</div>
-          <a href="https://pay.kiwify.com.br/7SPa1E2?src=pagina-direta" class="cta" onclick="fbq('track','InitiateCheckout',{content_name:'Combo PRO',value:69.90,currency:'BRL'});">QUERO O COMBO PRO</a>
-          <div class="plan-trust">Compra única e segura · Garantia de 30 dias</div>
-        </div>
-      </div>
-
-      <div class="plan">
-        <div class="plan-name">Combo Power · 6 meses</div>
-        <ul>
-          <li>180 dias de treino, pagos de uma vez só</li>
-          <li>6 atualizações de treino</li>
-          <li>Vídeo de cada exercício</li>
-          <li>Acesso pelo celular</li>
-          <li>Os 4 bônus exclusivos</li>
-        </ul>
-        <div class="plan-bonus">
-          <b>🎁 4 bônus grátis nas próximas 24 horas</b>
-          Treino Power em Casa · Mobilidade em 10 minutos · Acesso vitalício · Suporte no WhatsApp com a Millane
-        </div>
-        <div class="plan-pricebox">
-          <div class="price-old">De <s>R$ 399,90</s> por:</div>
-          <div class="price">R$ 99,90</div>
-          <div class="plan-note">Compra única · parcele no cartão · R$ 0,55 por dia.</div>
-          <a href="https://pay.kiwify.com.br/TloECFn?src=pagina-direta" class="cta" onclick="fbq('track','InitiateCheckout',{content_name:'Combo Power',value:99.90,currency:'BRL'});">QUERO O COMBO POWER</a>
-        </div>
-      </div>
-
-    </div>
-    <div class="guarantee-line">✓ <b>GARANTIA DE 30 DIAS</b> · risco zero</div>
-  </div>
-</section>
-
-<section class="guarantee">
+<section class="guarantee" id="garantia">
   <div class="wrap">
     <div class="guarantee-card">
       <span class="risk-badge">🛡️ Risco zero</span>
@@ -593,7 +624,7 @@ src="https://www.facebook.com/tr?id=895283775364322&ev=PageView&noscript=1"/></n
   </div>
 </section>
 
-<section class="faq">
+<section class="faq" id="faq">
   <div class="wrap">
     <h2 class="section-title">Perguntas frequentes</h2>
     <div class="faq-item">
@@ -715,33 +746,89 @@ carrossel('proofTrack','proofDots',5000);
       <span class="now">R$ 59,90</span>
       <span class="obs">Compra única · parcele no cartão</span>
     </div>
-    <a href="https://pay.kiwify.com.br/OC0PoxE?src=pagina-direta-popup" class="cta" onclick="fbq('track','InitiateCheckout',{content_name:'Combo PRO (upgrade popup)',value:59.90,currency:'BRL'});">SIM, QUERO AS ATUALIZAÇÕES E OS BÔNUS</a>
-    <button class="up-skip" id="upSkip">Não, quero só os 30 dias por R$ 29,90</button>
+    <a href="https://pay.kiwify.com.br/OC0PoxE?src=pagina-direta-popup" id="btn-checkout-upgrade-popup" class="cta btn-checkout" data-ic-name="Combo PRO (upgrade popup)" data-ic-value="59.90">SIM, QUERO AS ATUALIZAÇÕES E OS BÔNUS</a>
+    <a href="https://pay.kiwify.com.br/NNanXZl?src=pagina-direta-popup-recusa" id="btn-checkout-basico-popup" class="up-skip btn-checkout" data-ic-name="Pacote 30 dias (recusou upgrade)" data-ic-value="29.90">Não, quero só os 30 dias por R$ 29,90</a>
   </div>
 </div>
 
 <script>
 (function(){
   var overlay=document.getElementById('upOverlay');
-  var btn=document.querySelector('.js-basic');
-  if(!overlay||!btn) return;
-  var mostrou=false;
-  btn.addEventListener('click', function(e){
-    if(mostrou) return;
-    e.preventDefault();
-    mostrou=true;
-    overlay.classList.add('open');
-    if(window.fbq) fbq('trackCustom','UpgradeOfferShown');
+  var btns=document.querySelectorAll('.js-basic');
+  if(!overlay||!btns.length) return;
+  var mostrou=false, ultimo=btns[0];
+  btns.forEach(function(b){
+    b.addEventListener('click', function(e){
+      ultimo=b;
+      if(mostrou) return;
+      e.preventDefault();
+      mostrou=true;
+      overlay.classList.add('open');
+      rastrear('upgrade_exibido');
+    });
   });
   function fechar(){ overlay.classList.remove('open'); }
-  document.getElementById('upClose').addEventListener('click', fechar);
-  document.getElementById('upSkip').addEventListener('click', function(){
-    fechar();
-    window.location.href = btn.getAttribute('href');
-  });
+  document.getElementById('upClose').addEventListener('click', function(){ fechar(); rastrear('upgrade_fechado'); });
   overlay.addEventListener('click', function(e){ if(e.target===overlay) fechar(); });
 })();
 </script>
 
+<script>
+/* ===== Trackeamento Fit em 30 — tudo via dataLayer (GTM + Stape) ===== */
+window.dataLayer=window.dataLayer||[];
+var F30_UTMS={};
+function f30id(){ return 'f30_'+Date.now()+'_'+Math.random().toString(36).slice(2,10); }
+function rastrear(evento, params){
+  var o={event:evento, event_id:f30id(), pagina:'pagina-direta'};
+  var k; params=params||{};
+  for(k in params) o[k]=params[k];
+  for(k in F30_UTMS) o[k]=F30_UTMS[k];
+  window.dataLayer.push(o);
+}
+(function(){
+  var CHAVES=['utm_source','utm_medium','utm_campaign','utm_content','utm_term','fbclid','sck'];
+  var LS='fit30_utm';
+  function ler(){ try{ return JSON.parse(localStorage.getItem(LS))||{}; }catch(e){ return {}; } }
+  var url=new URLSearchParams(location.search), atual={}, temNova=false;
+  CHAVES.forEach(function(k){ var v=url.get(k); if(v){ atual[k]=v; temNova=true; } });
+  F30_UTMS = temNova ? atual : ler();
+  if(temNova){ try{ localStorage.setItem(LS, JSON.stringify(atual)); }catch(e){} }
+
+  rastrear('view_content',{content_name:'Pagina direta Fit em 30'});
+
+  // UTMs nos links da Kiwify (mantém o src de posição)
+  document.querySelectorAll('a[href*="pay.kiwify.com.br"]').forEach(function(a){
+    try{ var u=new URL(a.href);
+      Object.keys(F30_UTMS).forEach(function(k){ if(!u.searchParams.get(k)) u.searchParams.set(k,F30_UTMS[k]); });
+      a.href=u.toString(); }catch(e){}
+  });
+
+  var feitos={};
+  function uma(ev, params, chave){ if(feitos[chave]) return; feitos[chave]=1; rastrear(ev, params); }
+
+  window.addEventListener('scroll', function(){
+    var h=document.documentElement, pct=(h.scrollTop+window.innerHeight)/h.scrollHeight*100;
+    [25,50,75,90].forEach(function(m){ if(pct>=m) uma('rolagem',{percentual:m},'r'+m); });
+  }, {passive:true});
+
+  var secoes={'resultados':'Resultados','bonus':'Bonus','planos':'Precos','depoimentos':'Avaliacoes','garantia':'Garantia','faq':'FAQ'};
+  if('IntersectionObserver' in window){
+    var io=new IntersectionObserver(function(ents){
+      ents.forEach(function(en){ if(!en.isIntersecting) return;
+        uma('viu_secao',{secao:secoes[en.target.id]},'s'+en.target.id);
+        if(en.target.id==='planos') uma('add_to_cart',{content_name:'Viu os precos',value:29.90,currency:'BRL'},'atc');
+        io.unobserve(en.target); });
+    }, {threshold:0.35});
+    Object.keys(secoes).forEach(function(id){ var el=document.getElementById(id); if(el) io.observe(el); });
+  }
+
+  var ativo=0;
+  setInterval(function(){
+    if(document.visibilityState!=='visible') return;
+    ativo+=5;
+    [30,60,120].forEach(function(t){ if(ativo>=t) uma('tempo_na_pagina',{segundos:t},'t'+t); });
+  }, 5000);
+})();
+</script>
 </body>
 </html>
