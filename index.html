@@ -802,6 +802,20 @@ function rastrear(evento, params){
       a.href=u.toString(); }catch(e){}
   });
 
+  // begin_checkout — mesmo evento que o botão da InLead envia no quiz.
+  // Só dispara quando a pessoa realmente vai para a Kiwify (o clique que abre o pop-up não conta).
+  // Não bloqueia o link: o gtm.linkClick continua nativo.
+  document.addEventListener('click', function(e){
+    var a=e.target.closest && e.target.closest('a.btn-checkout');
+    if(!a || e.defaultPrevented) return;
+    var valor=parseFloat(a.dataset.icValue||'0'), nome=a.dataset.icName||a.id;
+    window.dataLayer.push({ecommerce:null});
+    rastrear('begin_checkout',{
+      value:valor, currency:'BRL', content_name:nome, botao:a.id,
+      ecommerce:{currency:'BRL', value:valor, items:[{item_id:a.id, item_name:nome, price:valor, quantity:1}]}
+    });
+  });
+
   var feitos={};
   function uma(ev, params, chave){ if(feitos[chave]) return; feitos[chave]=1; rastrear(ev, params); }
 
